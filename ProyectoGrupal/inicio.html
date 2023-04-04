@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!---------------------NAVEGADOR----------------------------------------->
+    <div class="contenedorWeb">
+      <div class="navWeb">
+        <img src="assets/bird_2.jpg" alt="a" />
+        <div class="contenedorLogo"></div>
+        <h1>TITULO</h1>
+        <div class="logOut">
+          <button class="btnOut">CERRAR SESION</button>
+          <p>USER</p>
+        </div>
+      </div>
+      <!---------------------SECTION----------------------------------------->
+
+      <div class="sectionWeb">
+        <div class="upSection">
+          <div class="card">
+            <div class="title">
+              <input type="text" value="Título" id="Titulo" />
+            </div>
+            <div class="current_date"></div>
+            <div class="infocard">
+              <input class="inputTarea" name="comentarios" value="Escribe aqui tus comentarios" rows="10" cols="25" />
+             
+            </div>
+            <div class="botones">
+              <input class="guardar" type="button" onclick="save()" value="Guardar" />
+              <input type="button" onclick="save()" value="Editar" disabled />
+              <input type="button" onclick="save()" value="Detalles" disabled />
+            </div>
+          </div>
+        </div>
+        <div class="downSection"></div>
+      </div>
+      <!---------------------FOOTER----------------------------------------->
+
+      <div class="footerWeb">
+        <p>&copy; The bridge</p>
+      </div>
+    </div>
+    <script src="estructura.js"></script>
+  </body>
+</html>
