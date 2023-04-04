@@ -1,0 +1,41 @@
+[
+    {
+        "usuario": {
+            "nombre": "Dani",
+            "contraseña": "Eltrello.",
+            "email": "dani@dani",
+            "isLogin": "false"
+        }
+    },
+    {
+        "usuario": {
+            "nombre": "Paco",
+            "contraseña": "Eltrello.",
+            "email": "paco@paco",
+            "isLogin": "false"
+        }
+    },
+    {
+        "usuario": {
+            "nombre": "Fran",
+            "contraseña": "Eltrello.",
+            "email": "fran@fran",
+            "isLogin": "false"
+        }
+    },
+    {
+        "usuario": {
+            "nombre": "Javi",
+            "contraseña": "Eltrello.",
+            "email": "javi@javi",
+            "isLogin": "false"
+        }
+    },
+    {   "usuario": {
+        "nombre": "Benjy",
+        "contraseña": "Eltrello.",
+        "email": "benjy@benjy",
+        "isLogin": "false"
+    }
+}
+]
