@@ -1,0 +1,23 @@
+.card {
+    height: 235px;
+    width: 320px;
+    border: 2px solid black;
+
+}
+
+.title {
+    margin: 3px;
+}
+
+.boton {
+    margin: 3px;
+}
+
+.infocard {
+    margin-left: 3px;
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+    color: #FF214F;
+}
