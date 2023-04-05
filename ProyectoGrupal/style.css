@@ -118,7 +118,27 @@ height: 500px;
 }
 
 .newTask {
-    padding-top: 40px;
+  border: 1px solid black;
+    margin-top: 40px;
+    width: 190px;
+    text-align: center;
+    /* padding-top: 15px; */
+    border: 1px black solid;
+    /* width: 30%; */
+    margin-top: 40px;
+    height: 159px;
+  }
+
+.tarjetaDetallada {
+  border: 1px solid black;
+  margin-top: 40px;
+  width: 190px;
+  text-align: center;
+  /* padding-top: 15px; */
+  border: 1px black solid;
+  /* width: 30%; */
+  margin-top: 40px;
+  height: 200px;
 }
 
 .footerWeb {
