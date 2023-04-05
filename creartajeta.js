@@ -7,13 +7,29 @@ function save() {
     let minutos = fecha.getMinutes();
     let segundos = fecha.getSeconds();
 
-    
+
     let showdate = `${dias}/${mes}/${año} ${horas}:${minutos}:${segundos}`;
-    
+
     let tarjeta = document.querySelector(".card");
     let tarjeta2 = tarjeta.cloneNode(true);
-    console.log(tarjeta2);
+
+    const titleInput = document.querySelector('#titulotarjeta').value;
+    const descriptionInput = document.querySelector('#contenido').value
+
+    let infocard = {
+        titulo: titleInput,
+        descripcion: descriptionInput,
+    };
+
+    const tarjetas = [];
+
+    const añadir = tarjetas.push(infocard);
     
+    localStorage.setItem('card', JSON.stringify(tarjetas))
+
+
+
+
+
 }
 
-localStorage.getItem('Titulo')
