@@ -9,7 +9,11 @@ function save() {
 
     
     let showdate = `${dias}/${mes}/${año} ${horas}:${minutos}:${segundos}`;
-    console.log(showdate);
-
-
+    
+    let tarjeta = document.querySelector(".card");
+    let tarjeta2 = tarjeta.cloneNode(true);
+    console.log(tarjeta2);
+    
 }
+
+localStorage.getItem('Titulo')
