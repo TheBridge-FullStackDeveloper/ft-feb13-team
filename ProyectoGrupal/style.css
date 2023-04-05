@@ -12,6 +12,11 @@ body {
   min-height: 100%;
 }
 
+.contenedorWeb1 {
+  height: 100%;
+  border-radius: 20px;
+  background-color: antiquewhite;
+}
 .contenedorWeb {
   height: 100%;
   border-radius: 20px;
@@ -47,9 +52,32 @@ h1 {
 .btnOut {
   margin: 10px;
 }
+.form{
+    width: 50%;
+    height: 70%;
+align-items: center;
+    margin: auto;
+}
 
+.sectionWeb1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+height: 500px;
+
+}
+
+.form1{
+  width: 50%;
+  height: 50%;
+ /* centrado vertical */
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid grey;
+}
 .sectionWeb {
-  /* display: flex; */
+  
   background-color: antiquewhite;
   width: 100%;
   height: 500px;

@@ -14,10 +14,15 @@ function save() {
   let tarjeta = document.querySelector(".card");
   let tarjeta2 = tarjeta.cloneNode(true);
   tarjeta2.className = "newTask";
-  let boton = tarjeta2.lastChild.previousSibling.firstChild.nextSibling;
-  boton.className="boton1";
-  console.log(boton);
-  boton.disabled=true;
+  
+  let boton1 = tarjeta2.lastChild.previousSibling.firstChild.nextSibling;
+  let boton2 = tarjeta2.lastChild.previousSibling.firstChild.nextSibling.nextSibling.nextSibling;
+  let boton3 = tarjeta2.lastChild.previousSibling.firstChild.nextSibling.nextSibling.nextSibling.nextSibling.nextSibling;
+
+  console.log(boton3);
+  boton1.disabled=true;
+  boton2.disabled=false;
+  boton3.disabled=false;
 
  
   contenedor.appendChild(tarjeta2);
