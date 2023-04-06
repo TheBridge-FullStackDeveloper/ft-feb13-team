@@ -10,7 +10,7 @@
     <br />
     <a href="#">Demo</a>
     ·
-    <a href="#">Changelog</a>
+    <a href="[#](https://github.com/TheBridge-FullStackDeveloper/ft-feb13-team/CHANGELOG.md)">Changelog</a>
      ·
     <a href="https://github.com/TheBridge-FullStackDeveloper/ft-feb13-team/issues">Report Bug</a>
     ·
