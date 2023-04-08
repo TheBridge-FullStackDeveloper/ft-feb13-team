@@ -13,7 +13,7 @@ function save() {
 
 // Selecciono del DOM la tarjeta
     let tarjeta = document.querySelector(".card");
-    // let tarjeta2 = tarjeta.cloneNode(true);
+
 
 // Una vez seleccionada la tarjeta atrapo el valor del Titulo y de la Descripción.
     const titleInput = document.querySelector('#titulotarjeta').value;
