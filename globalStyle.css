@@ -203,3 +203,15 @@ p{
     margin-top: 40px;
     height: 200px;
 }
+
+.input:invalid {
+    border: 1px solid red;
+}
+
+.input:valid {
+    border: 1px solid green;
+}
+
+#buttonLogin:disabled {
+    cursor: not-allowed;
+}
