@@ -78,7 +78,18 @@
           input.value = "";
         }
       }
+
+
+      let usuarios = JSON.parse(localStorage.getItem("users"));
+      //buscamos el usuario logeado
+      let usuarioConectado = usuarios.filter(
+        (el) => el.usuario.isLogin === true
+        );
+        let nameNav = document.querySelector('#username');
+      nameNav.textContent= usuarioConectado[0].usuario.nombre;
     </script>
     <script src="creartajeta.js"></script>
+    <script src="usuarios.json"></script>
+    <script src="logOut.js"></script>
   </body>
 </html>
