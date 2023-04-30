@@ -37,5 +37,5 @@ function checkUser() {
 }
 
 function redirectUser() {
-    window.location.replace("tasks.html");
+    window.location.replace("tarjeta.html");
 }
