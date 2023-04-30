@@ -1,36 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="globalStyle.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="card.css">
-</head>
-
-<body>
-
-    <div class="card">
-
-
-        <div class="title">
-            <input type="text" id="titulotarjeta" value=Título>       
+  <body>
+      <!---------------------NAVEGADOR----------------------------------------->
+    <div class="contenedorWeb">
+      <div class="navWeb">
+        <!-- <img class="scaled" src="assets/logo.png" alt="a" /> -->
+        <div class="contenedorLogo"></div>
+        <h1>HEDWIGHTLETTER</h1>
+        <div class="logOut">
+          <button class="btnOut">CERRAR SESION</button>
+          <p id="username">USER</p>
         </div>
-        
-        <div class="infocard">
-            <input name="comentarios" id="contenido" style="width: 307px; height: 150px;"  value="Escribe aquí tus comentarios">
+      </div>
+    <!--------------->
+    <div class="sectionWeb">
+      <div class="upSection">
+        <div class="card">
+          <div class="title">
+            <input
+            style="width: 180px;"
+              type="text"
+              value="Título"
+              id="titulotarjeta"
+              onclick="borrarContenidoTitulo()"
+            />
+          </div>
+          <div class="current_date"></div>
+          <div class="infocard">
+            <input
+            
+              style="width: 180px; height: 100px;"
+              class="inputTarea"
+              name="comentarios"
+              id="contenido"
+              value="Descripción"
+              onclick="borrarContenidoDescripcion();"
+            />
+          </div>
+          <div class="botones">
+            <input
+              class="guardar"
+              type="button"
+              value="Guardar"
+              onclick="save()"
+            />
+            <input class="editar" type="button" value="Editar" disabled />
+            <input class="detalles" type="button" value="Detalles" disabled />
+          </div>
         </div>
-
-        <div class="boton">
-            <input type="button" class="button" onclick="save()" value="Guardar">
-            <input type="button" onclick="save()" value="Editar" disabled>
-            <input type="button" onclick="save()" value="Detalles" disabled>
-        </div>
-
+      </div>
+      <div class="downSection"></div>
     </div>
+ <!---------------------FOOTER----------------------------------------->
 
+ <div class="footerWeb">
+    <p>&copy; Hedwigletter</p>
+  </div>
+    <!--------------->
 
-
-</body>
-
+    <script>
+      function borrarContenidoTitulo() {
+        let titulo = document.querySelector("#titulotarjeta");
+        if (titulo.value == "Título") {
+          titulo.value = "";
+        }
+      }
+      function borrarContenidoDescripcion() {
+        let input = document.querySelector("#contenido");
+        if (input.value == "Descripción") {
+          input.value = "";
+        }
+      }
+    </script>
+    <script src="creartajeta.js"></script>
+  </body>
 </html>
